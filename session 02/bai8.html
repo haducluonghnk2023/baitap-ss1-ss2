@@ -7,7 +7,7 @@
 </head>
 <body>
     <script>
-        function checkPrime(item){
+         function checkPrime(item){
             let count = 0;
             for(let i = 1; i <= item; i++){
                 if(item % i == 0){
@@ -21,13 +21,12 @@
             }
         }
         function hasPrimeNumbers(arr){
-            let result = arr.some((item)=>{
+            let result = arr.every((item)=>{
                 return checkPrime(item) == true;
             })
             console.log(result);
         }
-        hasPrimeNumbers([1,4,6,8,9,11])
-        
+        hasPrimeNumbers([2,3,5,7])
         
     </script>
 </body>

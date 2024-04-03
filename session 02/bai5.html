@@ -21,14 +21,21 @@
                 age:30,
             },
         ]
-        function sortEmployees(employees){
-            let result = employees.sort((a,b)=>{
-                return a.age - b.age;
+        function increase(){
+            let result = employees.slice().sort((a,b)=>{
+                return a.age-b.age
             })
-            return result;
             console.log(result);
         }
-        sortEmployees(employees);
+        increase()
+
+        function decrease(){
+            let result = employees.slice().sort((a,b)=>{
+                return b.age-a.age
+            })
+            console.log(result);
+        }
+        decrease()
     </script>
 </body>
 </html>

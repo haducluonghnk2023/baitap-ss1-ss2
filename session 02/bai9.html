@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const carts = [
+            {
+                product_Name:"Cam",
+                price:20000,
+                quantity:5,
+            },
+            {
+                product_Name:"Táo",
+                price:30000,
+                quantity:5,
+            },
+            {
+                product_Name:"Xoài",
+                price:40000,
+                quantity:5,
+            },
+        ]
+        //c1
+        function totalPrice(carts){
+            let total = 0;
+            for(let i = 0; i < carts.length; i++){
+                total += carts[i].price * carts[i].quantity;
+            }
+            return total;
+        }
+        console.log(totalPrice(carts));
+
+        //c2
+        function totalPrice1(carts){
+            let result = carts.reduce((acc,curr)=>{
+                return acc + curr.price * curr.quantity
+            },0)
+            console.log(result);
+        }
+        totalPrice1(carts);
+
+    </script>
+</body>
+</html>
