@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // findIndex: tìm kiếm vị trí phần tử tm
+        let user = [
+            {
+                id:5,
+                name:"dũng",
+            },
+            {
+                id:6,
+                name:"hoàng",
+            },
+            {
+                id:7,
+                name:"ming",
+            }
+        ]
+        // tìm kiếm trong mảng user có phần tử id =6 hay không
+        let result = user.findIndex((item,index,arr) => {
+            return item.id === 6
+        })
+        console.log(result);
+    </script>
+</body>
+</html>

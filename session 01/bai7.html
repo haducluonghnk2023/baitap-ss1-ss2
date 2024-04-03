@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function timSoLonNhat(arr,num){
+            let filterArr = arr.filter(item => item <= num);
+            let max = filterArr.reduce((acc,curr) => {
+                return Math.max(acc,curr);
+            },Number.NEGATIVE_INFINITY);
+            return max;
+        }
+        let mangSoNguyen = [10, 20, 30, 40, 50];
+        let soNguyenBatKy = 35;
+        let ketQua = timSoLonNhat(mangSoNguyen, soNguyenBatKy);
+        console.log("Số lớn nhất trong mảng có giá trị nhỏ hơn hoặc bằng", soNguyenBatKy, "là", ketQua);
+    </script>
+</body>
+</html>

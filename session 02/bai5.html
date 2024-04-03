@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const employees = [
+            {
+                name:"a",
+                age:10,
+            },
+            {
+                name:"b",
+                age:20,
+            },
+            {
+                name:"c",
+                age:30,
+            },
+        ]
+        function sortEmployees(employees){
+            let result = employees.sort((a,b)=>{
+                return a.age - b.age;
+            })
+            return result;
+            console.log(result);
+        }
+        sortEmployees(employees);
+    </script>
+</body>
+</html>

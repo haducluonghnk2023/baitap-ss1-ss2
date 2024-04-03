@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        function checkHobbies(users){
+            let arr = [];
+            users.forEach(user => {
+                user.hobbies.forEach(hobby => {
+                    if (!arr.includes(hobby)) {
+                        arr.push(hobby);
+                    }
+                });
+            });
+            return arr;
+        }
+        const users = [
+            {
+                id:1,
+                name:"alice",
+                hobbies:['readings','drawing']
+            },
+            {
+                id:2,
+                name:"bob",
+                hobbies:['gaming','cooking']
+            },
+        ]
+        const result = checkHobbies(users);
+        console.log(result);
+    </script>
+</body>
+</html>

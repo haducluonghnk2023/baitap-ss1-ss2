@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // find(): dùng để tìm kiếm phần tử tm đk
+        // nếu tm đk thì trả về phần tử
+        // nếu không tm thì trả về undefined
+        let user = [
+            {
+                id:5,
+                name:"dũng",
+            },
+            {
+                id:6,
+                name:"hoàng",
+            }
+        ]
+        // tìm kiếm trong mảng user có phần tử id =6 hay không
+        let result = user.find((item,index) => {
+            return item.id === 6
+        })
+        console.log(result);
+    </script>
+</body>
+</html>

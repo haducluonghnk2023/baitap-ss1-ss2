@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // reduce : thường dùng để thực hiện việc tính toán
+        // accumulator : biến tích lũy
+        let carts =[
+            {
+                product:"iphone5",
+                price:5000,
+                quantity:5,
+            },
+            {
+                product:"iphone6",
+                price:7000,
+                quantity:3,
+            },
+            {
+                product:"iphone7", 
+                price:8000,
+                quantity:4,
+            },
+        ]
+        let reduce = carts.reduce((accumulator,currentValue,arr)=>{
+            return accumulator + currentValue.price*currentValue.quantity
+        },0)
+        console.log(reduce);
+    </script>
+</body>
+</html>

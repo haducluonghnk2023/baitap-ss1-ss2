@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function filter(arr1, arr2) {
+            let arr = [];
+
+            for (let i = 0; i < arr1.length; i++) {
+                if (arr2.includes(arr1[i])) {
+                    arr.push(arr1[i]);
+                }
+            }
+            arr1.length = 0;
+            arr1.push(...arr);
+
+            return arr1;
+        }
+
+        const array1 = [1, 2, '1', 3, 'a'];
+        const array2 = [1, 2, 3, 4];
+
+        const filterArr = filter(array1, array2);
+        console.log(filterArr); 
+
+
+    </script>
+</body>
+</html>

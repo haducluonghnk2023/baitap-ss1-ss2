@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // sort : sắp xếp
+        // let arr = [1,5,11,6,9,3];
+        let films = [
+            {
+                name:"nam",
+                date:"2024/11/09",
+            },
+            {
+                name:"hoa",
+                date:"2024/12/03",
+            },
+            {
+                name:"hồng",
+                date:"2024/08/19",
+            },
+        ]
+        let result = films.sort((a,b)=>{
+            return a.date.localeCompare(b.date)
+        })
+        console.log(result);
+        // let result = arr.sort((a,b)=>{
+        //     return -a+b;
+        // });
+        // console.log(result);
+
+    </script>
+</body>
+</html>

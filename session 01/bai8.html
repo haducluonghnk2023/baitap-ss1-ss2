@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function chenMang(arr1,arr2,index){
+            if(index <0 || index > arr1.length){
+                console.log("vị trí chèn không hợp lệ");
+            }
+            let result = arr1.slice(0,index).concat(arr2,arr1.slice(index));
+            return result;
+        }
+        let arr1 = [1,2,3];
+        let arr2 = [4,5,6];
+        let index = 2;
+        let output = chenMang(arr1,arr2,index);
+        console.log(output);
+    </script>
+</body>
+</html>
