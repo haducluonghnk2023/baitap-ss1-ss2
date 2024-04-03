@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        Toán tử spread : 
+            trong object chia làm 2 dạng clone 
+            1. deep clone : sâu
+            2. shalow clone : nông
+     -->
+     <script>
+        let obj1 = {
+            name: "hoa"
+        }
+        let obj2 = {...obj1}; // clone trong object 
+        obj1.name = "huệ";
+        console.log(obj2.name);
+        
+     </script>
+</body>
+</html>

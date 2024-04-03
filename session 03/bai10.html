@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function sumArr(...arrays){
+            const sums = [];
+            for (let i = 0; i < arrays.length; i++) {
+               const array = arrays[i];
+               const sum = array.reduce((acc,val) => acc + val,0);
+               sums.push(sum);
+            }
+            return sums;
+        }
+        const array1 = [1, 2];
+        const array2 = [6, 7, 9,8];
+        const array3 = [12, 10];
+
+        const result = sumArr(array1, array2, array3);
+        console.log(result);
+    </script>
+</body>
+</html>
